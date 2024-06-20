@@ -1,0 +1,41 @@
+# This is your rocks.nvim plugins declaration file.
+# Here is a small yet pretty detailed example on how to use it:
+#
+# [plugins]
+# nvim-treesitter = "semver_version"  # e.g. "1.0.0"
+
+# List of non-Neovim rocks.
+# This includes things like `toml` or other lua packages.
+[rocks]
+
+# List of Neovim plugins to install alongside their versions.
+# If the plugin name contains a dot then you must add quotes to the key name!
+[plugins]
+"rocks.nvim" = "2.28.0" # rocks.nvim can also manage itself :D
+"rocks-git.nvim" = "1.5.1"
+"rocks-config.nvim" = "1.6.0"
+"telescope.nvim" = "scm"
+"neo-tree.nvim" = "3.26"
+dashboard-nvim = "scm"
+"persistence.nvim" = "2.0.0"
+"telescope-project.nvim" = "scm"
+
+nvim-cmp = "0.0.1"
+cmp-buffer = "scm"
+cmp-path = "scm"
+luasnip = "2.3.0"
+cmp_luasnip = "scm"
+"lspkind.nvim" = "scm"
+copilot-cmp = "scm"
+
+nvim-lspconfig = "0.1.8"
+cmp-nvim-lsp = "scm"
+"lush.nvim" = "scm"
+
+[plugins.gruvbox]
+git = "morhetz/gruvbox"
+rev = "v3.0.1-rc.0^{}"
+
+[config]
+plugins_dir = "plugins/"
+auto_setup = true
